@@ -1,0 +1,39 @@
+<div align="center">
+<form method="POST">
+    <input type="text" id="input_form" value="" name="input_form" readonly><br />
+<input type="button" value="1" id="1" onclick="reply_click(this.id)">
+<input type="button" value="2" id="2" onclick="reply_click(this.id)">
+<input type="button" value="3" id="3" onclick="reply_click(this.id)">
+<input type="button" value="+" id="+" onclick="reply_click(this.id)"><br>
+<input type="button" value="4" id="4" onclick="reply_click(this.id)">
+<input type="button" value="5" id="5" onclick="reply_click(this.id)">
+<input type="button" value="6" id="6" onclick="reply_click(this.id)">
+<input type="button" value="-" id="-" onclick="reply_click(this.id)"><br>
+<input type="button" value="7" id="7" onclick="reply_click(this.id)">
+<input type="button" value="8" id="8" onclick="reply_click(this.id)">
+<input type="button" value="9" id="9" onclick="reply_click(this.id)">
+<input type="button" value="*" id="*" onclick="reply_click(this.id)"><br>
+<input type="button" value="C" id="clear"  onclick="cls()">
+<input type="button" value="0" id="0" onclick="reply_click(this.id)">
+<input type="submit" value="=" name="registration">
+<input type="button" value="/" id="/" onclick="reply_click(this.id)">
+    </form>
+
+</div>
+
+
+<script>
+  function reply_click(clicked_id)
+  {
+
+		let input = document.getElementById("input_form").value += clicked_id;
+
+  }
+
+      function cls(){
+
+let btn_clear = document.getElementById("input_form").value = "";
+
+}
+</script>
+
